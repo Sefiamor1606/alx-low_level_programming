@@ -13,7 +13,7 @@ int  main(void)
 	int d;
 	char low;
 
-	for (d = '0'; low <= 'f'; low++)
+	for (low = '0'; low <= 'f'; low++)
 	putchar(low);
 	putchar('\n');
 
