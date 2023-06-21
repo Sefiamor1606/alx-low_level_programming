@@ -1,7 +1,11 @@
+#include <stdio>
 #include "main.h"
 
 /**
- * main - prints alphabets in lowercase
+ * main - Prints alphabets in lowercase
+ *
+ * Alphabets are printed in lowercase from a to z
+ *Each new letter is printed on a new line.
  * Return: Always 0
  */
 
