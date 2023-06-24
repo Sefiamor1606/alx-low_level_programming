@@ -8,29 +8,29 @@
  * Return: Always (0)
  */
 
-int main(void)
+void positive_or_negative(int i)
 
 {
-	int n;
+	int i;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	i = rand() - RAND_MAX / 2;
 
-	printf("The number is: %d\n", n);
+	printf("The number is: %d\i", i);
 
-	if (n > 0)
+	if (i > 0)
 	{
-	printf("is positive\n");
+	printf("is positive\i");
 	}
-	else if (n == 0)
+	else if (i == 0)
 	{
-	printf("is zero\n");
+	printf("is zero\i");
 	}
 	else
 	{
-	printf("is negative\n");
+	printf("is negative\i");
 	}
 
-	return (0);
+	return(0);
 }
 
