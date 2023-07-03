@@ -24,7 +24,10 @@ unsigned int _strspn(char *s, char *accept)
 	value++;
 	break;
 	}
+	if (s[i + 1] == '\0')
+	return value;
 	}
+
 	return value;
 }
 
