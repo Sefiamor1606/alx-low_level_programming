@@ -4,18 +4,21 @@
 /**
  * _puts_recursion - Print a string followed by a line
  * @s: the string to print
- * Return: Nothing (0)
+ * Return: Nothing (void)
  */
 
 void _puts_recursion(char *s)
+
 {
+	_putchar(*s);
+
 	if (*s == '\0')
 	{
 	_putchar('\n');
 	return;
 	}
 
-_	putchar(*s);
 	s++;
 	_puts_recursion(s);
 }
+
