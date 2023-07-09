@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * main -  adds positive numbers.
+ * main - adds positive numbers.
  * @argc: argument count
  * @argv: argument vector
  * Return: 0 always
@@ -18,27 +18,28 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-	for (i = 1; i > argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-	e = argv[1];
+	e = argv[i];
 
 	for (k = 0; k < strlen(e); k++)
 	{
-	if (e[k] < 48 || e[k] > 57)
+	if (e[k] < '0' || e[k] > '9')
 	{
 	printf("Error\n");
 	return (1);
 	}
+	}
 
 	sum += atoi(e);
-	e++;
 	}
+
 	printf("%d\n", sum);
-	}
 	}
 	else
 	{
 	printf("0\n");
 	}
+
 	return (0);
 }
