@@ -26,9 +26,7 @@ typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
-int _strlen(const char *s);
-char *_strcpy(char *dest, const char *src);
-void print_dog(struct dog *d);
+int _strlen(char *s);
+char *_strcpy(char *dest, char *src);
 
 #endif /* DOG_H */
-
